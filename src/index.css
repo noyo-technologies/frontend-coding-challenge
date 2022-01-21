@@ -25,7 +25,8 @@ ul {
 li {
   list-style: none;
 }
-form, .addresses {
+form,
+.addresses {
   float: left;
   width: 60%;
 }
@@ -40,4 +41,46 @@ form, .addresses {
 }
 .addresses .selected > pre {
   outline: 1px dashed #333;
+}
+[data-reach-dialog-content] {
+  border-radius: 3px;
+  background: #fafafa !important;
+  padding: 2rem;
+}
+.button {
+  border: none;
+  padding: 0.5rem 1.75rem;
+  border-radius: 3px;
+  font-size: 12px;
+  background-color: #c03cec;
+  cursor: pointer;
+  color: #fff;
+}
+.close-button:hover {
+  background-color: #b01fe0;
+}
+.json-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.display-json-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.json-line {
+  display: flex;
+  padding: 0.5rem 0;
+  gap: 1rem;
+}
+.json-line.green {
+  border: 1px solid #22c55e;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+.json-text {
+  font-size: 14px;
+  color: #0f172a;
 }
