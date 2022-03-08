@@ -74,8 +74,9 @@ We'd like you to implement a small feature that lets you compare the JSON conten
 - The event comparison should appear in an overlay or a modal dialog box. 
 - You should be able to exit event comparison mode using a button or link.
 - The events should be displayed side-by-side, with properties or values that differ clearly highlighted (imagine a side-by-side git diff).
-- You may use third-party libraries for displaying the event JSON and for highlighting differences, or you may write your own solution. Either way, be prepared to discuss how you made your decisions.
+- Please do not use any third-party libraries for displaying the event JSON and for highlighting differences
 - You're free to style it however you feel is best, and we expect competent CSS, but you *will not be evaluated on your design skills*.
+
 
 To get started, take a look at lines 67-79 of `src/components.jsx`.
 
@@ -111,6 +112,7 @@ As such, we want this app to try to recover if it starts up and fails to connect
 * If any of the retry attempts succeeds, we should not retry again. The app should function normally at this point.
 * If the status code of any request is in the 400 range, we should treat this as success for the purposes of our retry logic, but we should still show an error message.
 * The retry logic should only apply to fetching user IDs, not addreses or events.
+* Please do not use any third-party libraries for implementing the retry logic.
 
 *Estimated time to complete: 30 minutes to 1 hour*
 
